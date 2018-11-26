@@ -1,1 +1,43 @@
+
+}
 * {margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-image: url(/CSS/img/background.bmp);
+    padding: 0 24%;
+}
+div{
+    background-color: #FEF9E7;
+    display: flex;
+    margin-top: 45px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 45px;
+    position: relative;
+    
+}
+nav a{
+    font: 16px 'Raleway', serif ;
+    color: #1C2833;
+    position: relative;
+    margin: 25px;
+    text-transform: capitalize;
+
+    
+}
+.After::before{
+    content: " ";
+    height: 20px;
+    position:absolute;
+    border: 1px solid black;
+    right: -32px;
+    opacity: 0.5;
+}
+nav img{
+    position: absolute;
+    left: -46px;
+    top: 5px;
+}
