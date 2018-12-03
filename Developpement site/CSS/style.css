@@ -8,36 +8,168 @@ body{
 div{
     background-color: #FEF9E7;
     display: flex;
+    flex-direction: column;
     margin-top: 45px;
 }
-nav{
+.Menu{
+    display: flex;
+    position: relative;
+    font: 16px 'Raleway', serif ;
+    color: #1c2833;
+    text-transform: capitalize;
+    justify-content: space-around;
+    margin-top: 45px;
+
+}
+.Accueil {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    width: 90%;
     margin-top: 45px;
     position: relative;
+    padding-left: 100px;
     
 }
-nav a{
+/* -----logo----*/
+.Accueil :first-child{
+    display: flex;
+    height: 120px;
+    width: 117px;
+    position :absolute;
+    top: -15px;
+    left: 10px;
+    z-index: 2;
+
+}
+.Accueil a{
+    display:flex;
+    flex-wrap: nowrap;
     font: 16px 'Raleway', serif ;
     color: #1C2833;
     position: relative;
     margin: 25px;
     text-transform: capitalize;
+    padding-left: 4px;
 
     
 }
-.After::before{
-    content: " ";
-    height: 20px;
-    position:absolute;
-    border: 1px solid black;
-    right: -32px;
-    opacity: 0.5;
+/*------    Bandeau autour du menu      -------*/
+.Menu img{
+    position: absolute;
+    left: -46px;
+    top: -20px;
 }
-nav img{
+
+.Accueil img{
     position: absolute;
     left: -46px;
     top: 5px;
+}
+
+/*----------    Section image logo et leitmotiv        -----------*/
+.Presentation{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;  
+   
+}
+.Presentation :first-child {
+   
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top : 50px;
+    
+}
+.Presentation p{
+   
+    font: 25px 'Indie Flower', serif;
+    color: #358E9D;
+    text-transform: capitalize;
+    width: 60%;
+    margin-left: 70px;
+  
+}
+.Presentation :last-child{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+/*---------       A propos de l'entreprise          --------------*/
+
+.actualite{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actualite :first-child{
+    font: 25px 'Indie Flower', serif;
+    color: #358E9D;
+    text-transform: capitalize;
+    position: relative;
+    margin-left: 160px;
+    
+}
+.actualite :first-child::before{
+    content: " ";
+    border-top: 1px solid #358E9D;
+    border-bottom: 1px solid #358E9D;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: -130px;
+    top: 12.5px;
+}
+.actualite :first-child::after{
+    content: " ";
+    border-top: 1px solid #358E9D;
+    border-bottom: 1px solid #358E9D;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: 130px;
+    top: 12.5px;
+}
+.actualite :last-child{
+    font: 25px 'Indie Flower', serif;
+    color: #358E9D;
+    text-transform: capitalize;
+    margin-right: 200px;
+    position: relative;
+}
+.actualite :last-child::before{
+    content: " ";
+    border-top: 1px solid #358E9D;
+    border-bottom: 1px solid #358E9D;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: -130px;
+    top: 12.5px;
+}
+.actualite :last-child::after{
+    content: " ";
+    border-top: 1px solid #358E9D;
+    border-bottom: 1px solid #358E9D;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: 130px;
+    top: 12.5px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.info p{
+    display: flex;
+    font: 20px 'Raleway', serif;
+    color: #1C2833;
+    flex-flow: column nowrap;
+    width: 50%;
+}
+.info a {
+    text-decoration: none;
 }
