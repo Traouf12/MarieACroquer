@@ -4,31 +4,46 @@
         <meta charset="utf-8"/>
         <meta name="author" content="Xavier Seng; Maël Mininger"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="On y retrouve une partie des différentes prestations proposées."> <!--Résume le contenu de la page-->
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet"/>
         <link href="CSS/style.css" rel="stylesheet"/>
         <meta name="description" content="Une page présentant toutes les prestations  proposées par DesMariésàCroquer.">
     </head>
     <body>
-        <div>
+        <div id="general">
         <!----------------        Menu de navigation    ------------------>
-            <nav class="Accueil" >
+            <header>
+                <nav class="Accueil" >
                 <img src="CSS/img/logo.png" alt="logo"/>
                 <a href="index.html" >accueil</a>
-                <a href="#" >prestations</a>
-                <a href="#" >realisations</a>
-                <a href="atelier.html" >ateliers</a>
-                <a href="#">idées cadeaux</a>
-                <a href="galerie.html" >galerie</a>
-                <a href="#">contact</a>
-<!--                <img src="CSS/img/menuNavigation.png" alt="menu"/>-->
-            </nav>        
+                <a href="#" class="Border">prestations</a>
+                <a href="#" class="Border">realisations</a>
+                <a href="atelier.html" class="Border">ateliers</a>
+                <a href="#"class="Border">idées cadeaux</a>
+                <a href="galerie.html" class="Border">galerie</a>
+                <a href="#"class="Border" id="dernier">connexion</a>
+                <img src="CSS/img/menuNavigation.png" alt="Bandeau de navigation"/>
+                </nav>
+            </header>
         </div>
-        <div>
+      
         <article class="Planning">
             <img src="CSS/img/calendrier.png" alt="planning"/>
             <p>Pour reserver appeler nous au XX-XX-XX-XX-XX</p>
         </article>
-
-        </div>
+        <footer>
+            <button>private policy</button>
+            <button>terme of service</button>
+            <button>nous contacter</button>
+            <div class="Follow">
+                <p>follow us</p>
+                <div>
+                    <a href="lienPinterest"><img class="Icone" src="CSS/img/pinterest.png" alt="Logo de pinterest"/></a>
+                    <a href="lienInstagram"><img class="Icone" src="CSS/img/instagram.png" alt="Logo de instagram"/></a>
+                    <a href="lienFacebook"><img class="Icone" src="CSS/img/facebook.png" alt="Logo de facebook"/></a>
+                    <a href="lienTwitter"><img class="Icone" src="CSS/img/twitter.png" alt="Logo de twitter"/></a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

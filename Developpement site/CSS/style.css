@@ -1,15 +1,17 @@
 
-}
 * {margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url(/CSS/img/background.bmp);
-    padding: 0 24%;
-}
-div{
-    background-color: #FEF9E7;
+    background-image: url("img/background.bmp");
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
+    align-items: center;
+}
+/*------------------*/
+/*Menu de navigation*/
+/*------------------*/
+#general{
+    flex-direction: column;
+    padding-top: 60px;
 }
 .Menu{
     display: flex;
@@ -25,51 +27,47 @@ div{
     text-decoration: none;
     color: #1c2833;
 }
-.Accueil {
+nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    margin-top: 45px;
+    justify-content: space-between;
+    width: 1000px;
     position: relative;
-    padding-left: 100px;
+    background-color:#FEF9E7;
     
 }
-/* -----logo----*/
-.Accueil :first-child{
-    display: flex;
-    height: 120px;
-    width: 117px;
-    position :absolute;
-    top: -15px;
-    left: 10px;
-    z-index: 2;
-
+#dernier{
+    margin-right: 15px;
 }
-.Accueil a{
-    display:flex;
-    flex-wrap: nowrap;
-    font: 16px 'Raleway', serif ;
-    color: #1C2833;
-    position: relative;
-    margin: 25px;
-    text-transform: capitalize;
-    padding-left: 4px;
-    text-decoration: none;    
+header nav a{
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    position:relative;font:16px 'Raleway',Serif;
+    text-transform: capitalize
 }
-
+header nav :first-child{
+    width:200px;
+    height:200px;
+    margin-left:50px;
+    z-index:1
+}
 /*------    Bandeau autour du menu      -------*/
-.Menu img{
-    position: absolute;
-    left: -46px;
-    top: -20px;
+header nav :last-child{
+    position:absolute;
+    right:-62px;
+    width:1120px;
+    top:70px;
+}
+.Border {
+    content:" ";
+    border-left:1px solid black;
+    padding-left:7px
 }
 
-.Accueil img{
-    position: absolute;
-    left: -46px;
-    top: 5px;
-}
+
+
+
 
 /*----------    Section image logo et leitmotiv        -----------*/
 .Presentation{
@@ -248,3 +246,27 @@ section{
 }
 
 /*------ Page Planning  ------*/
+
+
+
+/*------------------*/
+/*------Footer------*/
+/*------------------*/
+footer {display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    width:1000px;
+    background-color:#FFF9E7;
+    border-top:1px solid green;
+}
+
+.Follow {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Icone {
+    width:40px;
+}
